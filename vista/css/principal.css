@@ -1,0 +1,349 @@
+/*Icono de whatsapp verde*/
+.static_whastapp_img{
+    width: 60px;
+    position: fixed;
+    bottom: 30px;
+    right: 17px;
+    filter: drop-shadow(0 0 10px #0005);
+    z-index: 1000;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Todo el contenido esta dentro de este contenedor*/
+.container{
+    width: 85%;
+    margin: auto;
+   /* background-color: red; */
+}
+
+
+header{
+    width: 100%;
+
+}
+
+/*Iconos de redes sociales del header*/
+header .redes_sociales{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+header .redes_sociales img{
+    width: 35px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+header .redes_sociales img:hover{
+    transform: scale(1.2);
+}
+
+nav{
+    background: #E13386;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 100px;
+}
+
+nav a{
+    display: inline-block;
+    padding: 25px 0;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #fff;
+}
+
+nav img{
+    width: 60px;
+    border-radius: 50%;
+}
+
+nav .links{
+    display: flex;
+    gap: 60px;
+}
+
+
+nav .links a:hover{
+    text-decoration: underline;
+}
+
+nav .link_login{
+    background: #242222;
+    width: 115px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    transition: all .2s ease-in;
+}
+
+nav .link_login:hover{
+    background: #423e3e;
+}
+
+nav .link_login:active{
+    transform: scale(.9);
+}
+
+nav .link_login a{
+    display: inline;
+    padding: 10px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+    height: 70vh;
+    position: relative;
+}
+
+.banner_info{
+    width: 590px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.banner_info h1{
+    font-size: 3em;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: moveFromLeft 1s alternate forwards,
+                show 2s  forwards;
+    
+}
+
+.banner_info h1 span{
+    color: #E13386;
+}
+
+.banner_info button{
+    padding: 10px;
+    width: 250px;
+    font-size: 1.5em;
+    font-weight: 600;
+    background: #242222;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    opacity: 0;
+    margin-top: 10px;
+    animation: moveFromLeft 2s alternate forwards,
+                show 2s  forwards;
+ 
+}
+
+
+.banner img{
+    width: 200px;
+    border-radius: 50%;
+    opacity: 0;
+    animation: moveFromRight 1.5s forwards,
+               show 2s  forwards;
+    filter: drop-shadow(10px 0 10px #0006);
+    margin-top: 60px;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    z-index: -1000;
+}
+
+
+/* ANIMACIONES */
+
+@keyframes moveFromRight {
+    from{
+        transform: translateX(300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveFromLeft {
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes show {
+    to{
+        opacity: 1;
+    }
+}
+
+/* FIN ANIMACIONES */
+
+
+
+/* ESTILOS PARA LAS CARDS */
+
+.cuts_container{
+    background-color: #242222;
+    margin-top: 140px;
+    position: relative;
+}
+
+.cuts_container::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100px;
+    top: -100px;
+    background-color: #E13386;
+}
+
+
+.cuts_card_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cuts_card_container .cuts_card {
+    width: 300px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px #0005;
+    transform: translateY(-100px);
+    border-radius: 5px;
+}
+
+.cuts_card_container .cuts_card img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+
+.nosotros_container h2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+.nosotros_container .texto_nosotros{
+    text-align: center;
+    font-size: 1.5em;
+    color: #C2C2C2;
+}
+
+.mision_vision_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    color: #fff;
+    margin-top: 70px;
+    font-size: 1.5em;
+}
+
+.mision_vision_container .card{
+    background: #E13386;
+    width: 400px;
+    text-align: center;
+    padding: 40px 20px;
+    padding-bottom: 60px;
+    border-radius: 5px;
+}
+
+.mision_vision_container .card p{
+    margin-top: 40px;
+    color: #ffffffc4;
+}
+
+
+.mision_vision_container .img_container{
+    width: 150px;
+}
+
+.mision_vision_container .img_container img{
+    width: 100%;
+}
+
+.contacto_container {
+    background: #242222;
+    color: white;
+    margin-top: 50px;
+    padding-bottom: 100px    ;
+}
+
+.contacto_container h2{
+    font-size: 2em; 
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contacto_content{
+    display: flex;
+    justify-content: center;
+}
+
+.contacto_content .contacto_card_info{
+    background: #fff;
+    color: #242222;
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.contacto_content .contacto_card_info img{
+    width: 30px;
+}
+
+.contacto_card_info .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contacto_content .contacto_card_map{
+    width: 400px;
+}
+
+.contacto_content .contacto_card_map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    gap: 20px;
+}
+
+footer img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+footer h2{
+    font-size: 3em;
+    color: #242222;
+}
+
+
+footer p{
+    color: #acacac;
+}
