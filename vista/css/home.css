@@ -1,0 +1,137 @@
+header{
+    background-color: #E13386;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.log-out{
+    position: relative;
+    cursor: pointer;
+}
+
+.log-out h4 .arrow{
+    transform: rotate(180deg);
+}
+
+.log-out .log-out-item{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    right: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    width: 130px;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+}
+
+.log-out .log-out-item a{
+    color: #000;
+    text-decoration: none;
+}
+
+.log-out .log-out-item a:hover{
+    text-decoration: underline;
+}
+
+.log-out:hover > .log-out-item{
+    display: block;
+}
+
+main{
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+main .options{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main .options-card{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+main .options-card img{
+    width: 100px;
+}
+
+
+main .options-card a{
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+}
+
+.add-users-container{
+    /* background-color: rgb(255, 191, 191); */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.add-users-container form{
+    width: 250px;
+}
+
+.add-users-container form .form_input input, select{
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 5px;
+}
+
+.add-users-container form button{
+    width: 100%;
+    border: none;
+    padding: 6px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.add-users-container .table-container{
+    width: 750px;
+
+    padding: 10px;
+}
+
+.add-users-container .table-container table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.add-users-container .table-container th{
+    background-color: #333;
+    color: #fff;
+}
+
+.add-users-container .table-container th, td{
+    padding: 10px;
+}
+
+.add-users-container .table-container tbody tr:nth-child(even){
+    background: #e0e0e0;
+}
+
+
+
+

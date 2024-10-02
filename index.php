@@ -28,14 +28,14 @@
         <nav>
             <img src="vista/img/logo.jfif" alt="Logo">
             <div class="links">
-                <a href="index.html">Inicio</a>
+                <a href="index.php">Inicio</a>
                 <a href="#nosotros">Nosotros</a>
                 <a href="#contacto">Contacto</a>
                 <a href="#contacto">Citas</a>
             </div>
 
             <div class="link_login">
-                <a href="vista/cliente/login.php">Ingresar</a>
+                <a href="vista/users/login.php">Ingresar</a>
             </div>
         </nav>
     </header>
