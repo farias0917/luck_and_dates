@@ -76,5 +76,4 @@
             $consulta->execute();
         }
     }
-
 ?>
